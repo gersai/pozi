@@ -49,7 +49,57 @@ struct Moneda: View {
         
         
     }*/
+    switch EstadosDelBoton {
+    case "Play":
+        
+    case "Stop":
+        Button {
+            print()
+        } label: {
+            Image("stop")
+        }
+    case "Pause":
+        Button {
+            print()
+        } label: {
+            Image("pause")
+        }
+    case "Record":
+        Button {
+            print()
+        } label: {
+            Image("record.circle")
+        }
+    case "Trash":
+        Button {
+            print()
+        } label: {
+            Image("trash")
+        }
+    case "Tap":
+        Button {
+            print()
+        } label: {
+            Image("hand.tap")
+        }
+    case "Up":
+        Button {
+            print()
+        } label: {
+            Image("square.and.arrow.up")
+        }
+    case "Down":
+        Button {
+            print()
+        } label: {
+            Image("arrow.down.app")
+        }
+        
+    default:
+        print("Have you done something new?")
+    }
 }
+
 
 
 struct Moneda_Previews: PreviewProvider {
