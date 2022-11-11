@@ -4,7 +4,7 @@
 //
 //  Created by eduardo gersai  on 07/11/22.
 //
-
+/*
 import Foundation
 import SwiftUI
 import AVFoundation
@@ -86,3 +86,4 @@ struct RecordingList_Previews: PreviewProvider {
         RecordingList()
     }
 }
+*/

@@ -15,7 +15,12 @@ struct menuView: View {
             .resizable()
             .scaledToFill()
             .edgesIgnoringSafeArea(.all)
-
+            .safeAreaInset(edge: .top, spacing: 0) {
+                Color.clear.frame(height: 0)
+            }
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                Color.clear.frame(height: 0)
+            }
         )
     }
 }
@@ -25,3 +30,4 @@ struct menuView_Previews: PreviewProvider {
         menuView()
     }
 }
+

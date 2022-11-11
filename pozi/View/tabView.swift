@@ -12,7 +12,11 @@ struct tabView: View {
         TabView {
             menuView()
                 .tabItem {
-                    Label("pozi", systemImage: "moonphase.waning.crescent.inverse")
+                    Label("fondo", systemImage: "moonphase.waning.crescent.inverse")
+                }
+            Moneda(Imagen: "Play")
+                .tabItem {
+                    Label("moneda", systemImage: "moonphase.new.moon")
                 }
         }
     }

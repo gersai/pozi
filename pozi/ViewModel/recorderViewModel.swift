@@ -5,8 +5,7 @@
 //  Created by eduardo gersai  on 07/11/22.
 //
 
-import Foundation
-
+/*
 import Foundation
 import SwiftUI
 import Combine
@@ -66,3 +65,4 @@ struct recober_Previews: PreviewProvider {
         recorder(audioRecorder: AudioRecorder())
     }
 }
+*/
