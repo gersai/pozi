@@ -9,21 +9,15 @@ import SwiftUI
 
 struct menuView: View {
     var body: some View {
-        Text("")
-            .background(
+
         Image("bosque")
             .resizable()
-            .scaledToFill()
-            .edgesIgnoringSafeArea(.all)
-            .safeAreaInset(edge: .top, spacing: 0) {
-                Color.clear.frame(height: 0)
-            }
-            .safeAreaInset(edge: .bottom, spacing: 0) {
-                Color.clear.frame(height: 0)
-            }
-        )
+            .aspectRatio(UIImage(named: "bosque")!.size, contentMode: .fill)
+            .edgesIgnoringSafeArea(.top)
+        
     }
 }
+
 
 struct menuView_Previews: PreviewProvider {
     static var previews: some View {

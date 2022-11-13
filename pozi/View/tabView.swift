@@ -10,15 +10,24 @@ import SwiftUI
 struct tabView: View {
     var body: some View {
         TabView {
+            
             menuView()
                 .tabItem {
                     Label("fondo", systemImage: "moonphase.waning.crescent.inverse")
                 }
-            Moneda(Imagen: "Play")
+            Moneda()
                 .tabItem {
                     Label("moneda", systemImage: "moonphase.new.moon")
                 }
+            estadosDeMonedaView()
+                .tabItem{
+                Label("aniamcion", systemImage: "moonphase.new.moon.inverse")
+            }
+
         }
+        .background(.conicGradient(colors: [.red], center: UnitPoint()))
+        .opacity(100.0)
+
     }
 }
 

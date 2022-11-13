@@ -17,11 +17,14 @@
 		7E41426629190FE0008F4AFF /* recorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41426529190FE0008F4AFF /* recorderViewModel.swift */; };
 		7E4142682919107C008F4AFF /* monedaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4142672919107C008F4AFF /* monedaView.swift */; };
 		7E41426B29191229008F4AFF /* PlayResetButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41426A29191229008F4AFF /* PlayResetButtonModel.swift */; };
-		7E41426D291922F4008F4AFF /* MonedaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41426C291922F4008F4AFF /* MonedaModel.swift */; };
 		7E41426F29193516008F4AFF /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41426E29193516008F4AFF /* tabView.swift */; };
 		7E4142712919356C008F4AFF /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4142702919356C008F4AFF /* menuView.swift */; };
 		7E414273291973CC008F4AFF /* adudioRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E414272291973CC008F4AFF /* adudioRecorderViewModel.swift */; };
 		7E4142752919EDC1008F4AFF /* monedaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4142742919EDC0008F4AFF /* monedaViewModel.swift */; };
+		7E662A8B292103E600D256AE /* pauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E662A8A292103E600D256AE /* pauseView.swift */; };
+		7EA81356291F35B100D86BD4 /* estadosDeMonedaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA81355291F35B100D86BD4 /* estadosDeMonedaView.swift */; };
+		7EA81358291F3A7300D86BD4 /* monedaState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA81357291F3A7300D86BD4 /* monedaState.swift */; };
+		7EA8135A291F3B3500D86BD4 /* MonedaPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA81359291F3B3500D86BD4 /* MonedaPlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +58,14 @@
 		7E41426529190FE0008F4AFF /* recorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recorderViewModel.swift; sourceTree = "<group>"; };
 		7E4142672919107C008F4AFF /* monedaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monedaView.swift; sourceTree = "<group>"; };
 		7E41426A29191229008F4AFF /* PlayResetButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayResetButtonModel.swift; sourceTree = "<group>"; };
-		7E41426C291922F4008F4AFF /* MonedaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonedaModel.swift; sourceTree = "<group>"; };
 		7E41426E29193516008F4AFF /* tabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 		7E4142702919356C008F4AFF /* menuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
 		7E414272291973CC008F4AFF /* adudioRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adudioRecorderViewModel.swift; sourceTree = "<group>"; };
 		7E4142742919EDC0008F4AFF /* monedaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monedaViewModel.swift; sourceTree = "<group>"; };
+		7E662A8A292103E600D256AE /* pauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pauseView.swift; sourceTree = "<group>"; };
+		7EA81355291F35B100D86BD4 /* estadosDeMonedaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estadosDeMonedaView.swift; sourceTree = "<group>"; };
+		7EA81357291F3A7300D86BD4 /* monedaState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monedaState.swift; sourceTree = "<group>"; };
+		7EA81359291F3B3500D86BD4 /* MonedaPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonedaPlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +156,7 @@
 				7E4142362918B733008F4AFF /* poziApp.swift */,
 				7E4142382918B733008F4AFF /* ContentView.swift */,
 				7E41426A29191229008F4AFF /* PlayResetButtonModel.swift */,
-				7E41426C291922F4008F4AFF /* MonedaModel.swift */,
+				7EA81357291F3A7300D86BD4 /* monedaState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +167,9 @@
 				7E41426E29193516008F4AFF /* tabView.swift */,
 				7E4142702919356C008F4AFF /* menuView.swift */,
 				7E4142672919107C008F4AFF /* monedaView.swift */,
+				7E662A8A292103E600D256AE /* pauseView.swift */,
+				7EA81355291F35B100D86BD4 /* estadosDeMonedaView.swift */,
+				7EA81359291F3B3500D86BD4 /* MonedaPlay.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,14 +323,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E41426F29193516008F4AFF /* tabView.swift in Sources */,
+				7EA8135A291F3B3500D86BD4 /* MonedaPlay.swift in Sources */,
 				7E4142712919356C008F4AFF /* menuView.swift in Sources */,
 				7E4142752919EDC1008F4AFF /* monedaViewModel.swift in Sources */,
+				7E662A8B292103E600D256AE /* pauseView.swift in Sources */,
 				7E4142392918B733008F4AFF /* ContentView.swift in Sources */,
 				7E41426629190FE0008F4AFF /* recorderViewModel.swift in Sources */,
 				7E41426B29191229008F4AFF /* PlayResetButtonModel.swift in Sources */,
-				7E41426D291922F4008F4AFF /* MonedaModel.swift in Sources */,
+				7EA81356291F35B100D86BD4 /* estadosDeMonedaView.swift in Sources */,
 				7E4142372918B733008F4AFF /* poziApp.swift in Sources */,
 				7E414273291973CC008F4AFF /* adudioRecorderViewModel.swift in Sources */,
+				7EA81358291F3A7300D86BD4 /* monedaState.swift in Sources */,
 				7E4142682919107C008F4AFF /* monedaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

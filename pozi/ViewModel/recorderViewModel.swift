@@ -5,7 +5,7 @@
 //  Created by eduardo gersai  on 07/11/22.
 //
 
-/*
+
 import Foundation
 import SwiftUI
 import Combine
@@ -32,7 +32,7 @@ struct recorder: View {
     var body: some View {
         VStack {
             
-            RecordingList(audioRecorder: audioRecorder)
+            RecordingList(audioRecorder: AudioRecorder)
             
             if audioRecorder.recording == false {
                 Button(action: {print("Start recording")}) {
@@ -65,4 +65,4 @@ struct recober_Previews: PreviewProvider {
         recorder(audioRecorder: AudioRecorder())
     }
 }
-*/
+
