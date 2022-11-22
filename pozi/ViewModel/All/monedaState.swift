@@ -7,8 +7,8 @@
 
 import Foundation
 import SwiftUI
-
-enum MaquinaDeEstados: Hashable {
+/*
+enum MaquinaDeEstados1: Hashable {
     
     case inicial
     case grabando
@@ -19,7 +19,7 @@ enum MaquinaDeEstados: Hashable {
     var titulo : any View {
         switch  self {
         case .inicial:
-            return AnimacionPausaPrueba()
+            return AnimacionDeMoneda()
         case .grabando:
             return AnimacionDeMoneda()
         case .grabado:
@@ -33,7 +33,7 @@ enum MaquinaDeEstados: Hashable {
 }
 
 struct CoinViewModel {
-    var maquinaDeEstados: MaquinaDeEstados = .inicial
+    var maquinaDeEstados: MaquinaDeEstados1 = .inicial
     mutating func TCM() {
         switch maquinaDeEstados {
         case .inicial:
@@ -53,33 +53,6 @@ struct CoinViewModel {
             return
         }
         maquinaDeEstados = .descargar
-    }
-}
-/*
-struct MonedaState: view {
-    @State private var 
-    var body: some View {
-        
-    }
-}
-
- 
- 
- 
- var titulo : Button<Label: View> {
- switch  self {
- case .inicial:
- return Button {
- } label: {
- Image("moneda")
- }
- 
- 
- 
-
-struct MonedaState_Preview: PreviewProvider {
-    static var previews: some View {
-        MonedaState()
     }
 }
 */

@@ -1,30 +1,24 @@
 //
-//  pauseView.swift
+//  AnimacionDeMoneda.swift
 //  pozi
 //
-//  Created by eduardo gersai  on 13/11/22.
+//  Created by eduardo gersai  on 17/11/22.
 //
 
 import SwiftUI
 
-struct pauseView: View {
-    var body: some View {
-        AnimacionPausaPrueba()
-    }
-}
-struct AnimacionPausaPrueba: View {
-    @State private var pos = CGPoint(x:200,y:650) // just for testing
-    
+struct AnimacionDeMoneda: View {
+    @State private var pos = CGPoint(x:200,y:650)
+
     var body: some View {
         theButton.position(self.pos).highPriorityGesture(self.drag)
     }
-    
     var theButton: some View {
         ZStack {
             Button {
-               // print()
+                // print()
             } label: {
-                Image("pause.circle.fill")
+                Image("moneda")
                     .resizable()
                     .frame(width:60, height: 50)
             }
@@ -41,8 +35,8 @@ struct AnimacionPausaPrueba: View {
 }
 
 
-struct pauseView_Previews: PreviewProvider {
+struct AnimacionDeMoneda_Previews: PreviewProvider {
     static var previews: some View {
-        pauseView()
+        AnimacionDeMoneda()
     }
 }

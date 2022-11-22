@@ -1,11 +1,12 @@
 //
-//  tapView.swift
+//  tabView.swift
 //  pozi
 //
-//  Created by eduardo gersai  on 07/11/22.
+//  Created by eduardo gersai  on 16/11/22.
 //
 
 import SwiftUI
+
 
 struct tabView: View {
     var body: some View {
@@ -15,19 +16,19 @@ struct tabView: View {
                 .tabItem {
                     Label("fondo", systemImage: "moonphase.waning.crescent.inverse")
                 }
-            Moneda()
+            MonedaView()
                 .tabItem {
                     Label("moneda", systemImage: "moonphase.new.moon")
                 }
-            estadosDeMonedaView()
+            RecorderView(audioRecorder1: AudioRecorder())
                 .tabItem{
-                Label("aniamcion", systemImage: "moonphase.new.moon.inverse")
-            }
-
+                    Label("record", systemImage: "moon")
+                }
+            
         }
         .background(.conicGradient(colors: [.red], center: UnitPoint()))
         .opacity(100.0)
-
+        
     }
 }
 
